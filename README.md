@@ -1,0 +1,2 @@
+el init.php es el centro de la application.. porque cada  alterancions hecho en la pasta app sera realizado en la pasta public 
+por esto en la pasta public el archivo index.php hizo un required del arqiuvo init.php que esta ubucado dentro da pasta app que en sua vez hizo el required de todos os otros arquivos de library

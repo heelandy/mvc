@@ -3,11 +3,11 @@
 //se va encargara de cargar los modelos del banco de dados y la vista
    class Controlador{
        //cargar el modelo
-       public function modelo($modelo){
+       public function modelo($model){
           // cargar el modelo 
-          require_once '../app/modelo/' . $modelo . '.php';
+          require_once '../app/model/' . $model . '.php';
           //instanciar el modelo
-          return new $modelo(); 
+          return new $model(); 
        }
 
        public function vista($vista, $dato = []){

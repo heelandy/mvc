@@ -24,7 +24,7 @@
           }
        }
       //requerir el nuevo controlador
-         require_once '../app/controller/'. $this->controladorActual .'.php';  
+         require_once '../app/controller/'. $this->controladorActual.'.php';  
          $this->controladorActual = new $this->controladorActual;
  
          //si recebemos un metodo en la url 
@@ -49,7 +49,7 @@
         // verificar con el controlador el metodo si hay un parametro que vine junto con ellos
         call_user_func_array([$this->controladorActual, $this->metodoActual], $this->parametro);
 
- }
+     }
 
  
     public function getUrl(){
@@ -62,4 +62,5 @@
 
         }
     }
-  }
+
+}
